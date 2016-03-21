@@ -1,10 +1,10 @@
 # main text of home
-name: Levi Velázquezd
+name: Levi Velázquez
 bio: 'Full Stack Developer. Computer Engineer'
 
 # if it's an external image, update below for true
 external-image: false
-picture: 'assets/images/avatar2.png'
+picture: "assets/images/avatar2.png"
 url: http://levivm.github.io
 
 # your url: http://USERNAME.github.io
