@@ -7,6 +7,7 @@ external-image: false
 picture: 'assets/images/profile.jpg'
 
 url: http://levivm.github.io
+
 # your url: http://USERNAME.github.io
 
 permalink: /:title/
