@@ -58,7 +58,11 @@
             <svg class="icon icon-medium"><use xlink:href="#icon-medium"></use></svg>
         </a>
     {% endif %}
-
+    {% if site.stackoverflow %}
+        <a class="link" data-title="stackoverflow.com/users/{{ site.stackoverflow }}/" href="https://stackoverflow.com/users/{{ site.stackoverflow }}/" target="_blank">
+            <svg class="icon icon-stackoverflow"><use xlink:href="#icon-stackoverflow"></use></svg>
+        </a>
+    {% endif %}
     {% if site.email %}
         <a class="link" data-title="{{ site.email }}" href="mailto:{{ site.email }}" target="_blank">
             <svg class="icon icon-mail"><use xlink:href="#icon-mail"></use></svg>
