@@ -64,13 +64,14 @@ related: true
 animation: true
 
 gems:
-  - jemoji
   - jekyll-mentions
   - jekyll-seo-tag
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-gist
   - jekyll-paginate
+  - jemoji
+
 
 jekyll-mentions:
     base_url: https://github.com
