@@ -11,7 +11,7 @@ jemoji:
 
 Sometimes, we get a point where we have many branch that we don't need anymore. It can be a tedious task delete them one by one. 
 
-In order to avoid that, I made an script where we just need to specify which branch we don't want to delete. Just run the script and that is, all your ugly/unfriendly branches have been gone.
+In order to avoid that, I made a script where we just need to specify which branches we don't want to delete, just run the script and that is all. Your ugly/unfriendly branches have been gone.
 
 {% highlight bash %}
 
