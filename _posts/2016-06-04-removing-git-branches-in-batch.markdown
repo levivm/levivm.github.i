@@ -9,15 +9,15 @@ blog: true
 jemoji:
 ---
 
-Sometimes, we get a point where we have many branch that we don't need anymore. It can be a tedious task delete them one by one. 
+Sometimes, we get a point where we have so many branches that we don't need anymore. It can be a tedious task delete them one by one. 
 
-In order to avoid that, I made a script where we just need to specify which branches we want to preserve, just run the script and that is all. Your ugly/unfriendly branches have been gone.
+In order to avoid that, we can automate this task. Using this script, you just need to specify which branches you want to preserve, run it and that is all. Your ugly/unfriendly branches should been gone.
 
 {% highlight bash %}
 
 #!/bin/sh
 # branch list to not delete
-branch_not_delete=( "master" "develop" "our-branch-1" "our-branch-1")
+branch_not_delete=( "master" "develop" "our-branch-1" "our-branch-2")
 
 
 # Iterate over remotes branch and if they aren't in our previous list, we deleted # them
