@@ -8,7 +8,8 @@ picture: 'assets/images/avatar2.png'
 # picture: 'assets/images/profile.jpg'
 
 
-url: levipy.com
+# url: http://levivm.github.io
+url: http://levipy.com
 # your url: http://USERNAME.github.io
 
 permalink: /:title/
