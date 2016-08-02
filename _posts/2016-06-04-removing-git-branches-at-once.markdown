@@ -3,7 +3,7 @@ title: "Removing git branches at once"
 layout: post
 date: 2016-06-04 04:38:13
 image: '/assets/images/'
-description:
+description: Removing git branches at once
 tags:
 blog: true
 jemoji:
