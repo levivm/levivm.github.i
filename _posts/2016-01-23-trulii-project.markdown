@@ -50,5 +50,5 @@ Frontend:
 
 ---
 
-[Check it out](trulii.com) here.
+[Check it out](https://trulii.com) here.
 If you want to know a bit more, just [tell me](mailto:levinoelvm@gmail.com).
