@@ -9,7 +9,8 @@ description: "A marketplace where you can find hundreds of classes in your city"
 jemoji: '<img class="emoji" title=":ramen:" alt=":ramen:" src="https://assets.github.com/images/icons/emoji/unicode/1f35c.png" height="20" width="20" align="absmiddle">'
 ---
 
-<img style="text-align: center;" src="https://s32.postimg.org/keod9jqmd/Home_Desktop.jpg" />
+->![Screenshot](https://s32.postimg.org/keod9jqmd/Home_Desktop.jpg)<-
+
 
 Trulii as platform is split in two main sections. We built backend as an API REST using Django-Rest-Framework in order to be consumed by any mobile or web app. The client side is a SPA built using AngularJS. 
 
