@@ -40,5 +40,5 @@ of Django - Angular communities in Stackoverflow.</p>
 <h2>Projects</h2>
 
 <ul>
-	<li><a href="trulii.com">Trulii</a></li>
+	<li><a href="trulii-project">Trulii</a></li>
 </ul>
