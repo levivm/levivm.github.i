@@ -1,6 +1,7 @@
 # main text of home
 name: Levi Velázquez
-bio: 'Full Stack Developer. Computer Engineer, Entrepreneur, CTO at Trulii.'
+bio: '''Full Stack Developer. Computer Engineer, Entrepreneur, CTO at 
+	     <a href="https://trulii.com">Trulii.com</a>'''
 
 # if it's an external image, update below for true
 external-image: false
