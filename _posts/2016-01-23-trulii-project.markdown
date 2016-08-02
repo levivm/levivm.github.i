@@ -12,9 +12,9 @@ jemoji: '<img class="emoji" title=":ramen:" alt=":ramen:" src="https://assets.gi
 {: .text-center}
 ![Screenshot](https://s32.postimg.org/keod9jqmd/Home_Desktop.jpg)
 
+Trulii is a marketplace where you can find hundreds of classes in your city.
 
-
-Trulii as platform is split in two main sections. We built backend as an API REST using Django-Rest-Framework in order to be consumed by any mobile or web app. The client side is a SPA built using AngularJS. 
+As platform, Trulii is split in two main sections. We built backend as an API REST using Django-Rest-Framework in order to be consumed by any mobile or web app. The client side is a SPA built using AngularJS. 
 
 Both parts are totally containerized using docker/docker-compose and hosted on AWS EC2 instances. Integrating docker was a big challange but now we can deploy a new server in just five minutes.
 
