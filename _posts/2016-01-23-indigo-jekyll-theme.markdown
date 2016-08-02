@@ -9,13 +9,13 @@ description: "A marketplace where you can find hundreds of classes in your city"
 jemoji: '<img class="emoji" title=":ramen:" alt=":ramen:" src="https://assets.github.com/images/icons/emoji/unicode/1f35c.png" height="20" width="20" align="absmiddle">'
 ---
 
-![Screenshot](https://s32.postimg.org/keod9jqmd/Home_Desktop.jpg)
+<center>![Screenshot](https://s32.postimg.org/keod9jqmd/Home_Desktop.jpg)</center>
 
-Trulii as platform is splitted in two main sections. We built backend as an API REST using Django-Rest-Framework in order to be consumed by any mobile or web app. The client side is a SPA built using AngularJS. 
+Trulii as platform is split in two main sections. We built backend as an API REST using Django-Rest-Framework in order to be consumed by any mobile or web app. The client side is a SPA built using AngularJS. 
 
-Both parts are totally containerized using docker/docker-compose and hosted on AWS EC2 instances. Integrating docker was a big challanges but now we can deploy a new server in just five minutes.
+Both parts are totally containerized using docker/docker-compose and hosted on AWS EC2 instances. Integrating docker was a big challange but now we can deploy a new server in just five minutes.
 
-Frontend was built following extrictly [John Papa's Angular Style Guide](https://github.com/johnpapa/angular-styleguide) to guarante a clean, correct and readable code. 
+Frontend was built following strictly [John Papa's Angular Style Guide](https://github.com/johnpapa/angular-styleguide) to guarantee a clean, correct and readable code. 
 
 
 ---
@@ -23,11 +23,13 @@ Frontend was built following extrictly [John Papa's Angular Style Guide](https:/
 What has inside?
 
 Server and Deployment:
+
 - Docker
 - AWS
 - Nginx
 
 Backend:
+
 - Django/Python
 - Django-Rest-Framework
 - Redis
@@ -36,6 +38,7 @@ Backend:
 - PostgreSQL
 
 Frontend:
+
 - Angular
 - Gulp
 - Less
