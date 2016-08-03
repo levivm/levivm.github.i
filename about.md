@@ -10,7 +10,7 @@ mainly using Django as framework and building platforms from scratch. I have
 worked for several startups as lead developer. Actually, I am CTO/CO-Founder at Trulii.com, a colombian startup, a marketplace where anybody can find and book hundreds of classes in their city.
 </p>
 
-<p>I’m startup enthusiast, involved on several incubators as startup-chile and wayra. 
+<p>I’m startup enthusiast, involved on several incubators as Startup-chile and Wayra. 
 I contributed to some Django Open Source projects as Django-allauth and DRF. Also, an active member 
 of Django - Angular communities in Stackoverflow.</p>
 
