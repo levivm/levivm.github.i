@@ -2,7 +2,7 @@
 title: "Removing git branches at once"
 layout: post
 date: 2016-06-04 04:38:13
-image: 'http://build-better.website/wp-content/uploads/2015/09/Screen-Shot-2015-09-08-at-18.38.15-400x300-c-default.png'
+image: 'http://nvie.com/img/merge-without-ff@2x.png'
 description: Removing git branches at once.
 tags:
 - git
