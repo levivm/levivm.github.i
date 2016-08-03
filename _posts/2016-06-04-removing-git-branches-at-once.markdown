@@ -2,14 +2,16 @@
 title: "Removing git branches at once"
 layout: post
 date: 2016-06-04 04:38:13
-image: 'http://nvie.com/img/merge-without-ff@2x.png'
-description: Removing git branches at once
+image: 'http://build-better.website/wp-content/uploads/2015/09/Screen-Shot-2015-09-08-at-18.38.15-400x300-c-default.png'
+description: Removing git branches at once.
 tags:
+- git
+- branches
 blog: true
 jemoji:
 ---
 
-Sometimes, we get a point where we have so many branches that we don't need anymore. It can be a tedious task delete them one by one. 
+Sometimes, we realized that we have many branches that we don’t need anymore. It can be a tedious task delete them one by one. 
 
 In order to avoid that, we can automate this task. Using this script, you just need to specify which branches you want to preserve, run it and that is all. Your ugly/unfriendly branches should been gone.
 
