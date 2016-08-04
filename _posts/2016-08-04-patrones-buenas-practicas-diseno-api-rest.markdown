@@ -10,7 +10,7 @@ tags:
 - REST
 - Patterns
 blog: true
-jemoji: doughnut
+jemoji: ':doughnut:'
 
 ---
 
