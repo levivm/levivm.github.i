@@ -376,6 +376,7 @@ pre {
   border: 1px solid #ededed;
   border-radius: 2px;
 }
+.inlined { display:inline; }
 .wrapper-normal,
 .wrapper-large {
   height: 100%;
