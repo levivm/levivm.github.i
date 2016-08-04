@@ -62,10 +62,10 @@ Los métodos serían los siguientes:
 - __DELETE__: Para eliminar recursos.
 - __PATCH__: Para editar partes concretas de un recurso.
 
-{: .text-center}
-![API REST](http://www.nodewiz.biz/content/images/2013/Nov/restful_api1.jpg)
-
 ### Resultado final
+
+{: .text-center}
+![API REST POST](http://www.nodewiz.biz/content/images/2013/Nov/restful_api1.jpg)
 
 Uniendo los dos puntos anteriormente explicados, tendremos como resultado las principales reglas que debemos tomar en cuenta a la hora de diseñar las URL's para nuestra API REST.
 
