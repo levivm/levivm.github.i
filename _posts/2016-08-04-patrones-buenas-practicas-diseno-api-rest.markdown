@@ -1,5 +1,5 @@
 ---
-title: "Patrones y Buenas Prácticas para diseño de un API REST"
+title: "Patrones y buenas prácticas para el diseño de un API REST"
 layout: post
 date: 2016-08-04 04:38:13
 image: 'http://enetronx.com/wp-content/uploads/2016/04/rest-api-logo-2.jpg'
@@ -18,6 +18,9 @@ jemoji: ':doughnut:'
 Primero, debemos saber el significado de API, por sus siglas en inglés _Application Programming Interface_. Básicamente, representan una colección de métodos y funciones implementadas en un sistema con el fin de que las mismas sean utilizadas por otros. 
 
 A medida que surgieron APIs sobre aplicaciones y plataformas web, se fue formando el término API REST, el cual se usa para denominar a las API que están implementadas bajo el protocolo HTTP. En otras palabras, un API REST  permite el uso de un servicio(function o método) perteneciente a una plataforma a un usuario externo para que el mismo lo use en una aplicación propia. 
+
+{: .text-center}
+![API REST](https://openasset.com/website/_uploads/blog/rest-api.jpg)
 
 ## Características
 
