@@ -28,17 +28,17 @@ A medida que surgieron APIs sobre aplicaciones y plataformas web, se fue formand
    
    Las URI's deben cumplir con ciertas características: 
    
-   - La URI no debe llevar un verbo que implique una acción  
+   - No deben llevar un verbo que implique una acción  
         __Incorrecto__: _/recursos/id/editar_   
         __Correcto__: _/recursos/id/_ 
 
-   - La URI deben identificar solo a un recurso, deben ser únicas.
+   - Deben identificar solo a un recurso, deben ser únicas.
 
-   - No se debe tomar en cuenta el formato en la construcción de la URI  
+   - No deben tomar en cuenta el formato en la construcción de la URI  
       __Incorrecto__: _/recursos/archivo.pdf_   
       __Correcto__: _/recursos/archivo_
 
-   - Debe mantener una jerarquía lógica.  
+   - Deben mantener una jerarquía lógica.  
       __Incorrecto__: _/apartamentos/2/edificio/3_    
       __Correcto__: _/edificios/3/apartamentos/2_
 
