@@ -10,7 +10,7 @@ tags:
 - REST
 - Patterns
 blog: true
-jemoji: '<img class="emoji" title=":doughnut:" alt=":doughnut:" src="https://assets.github.com/images/icons/emoji/unicode/1f35c.png" height="20" width="20" align="absmiddle">'
+jemoji: :doughnut:
 
 ---
 
