@@ -30,17 +30,23 @@ A medida que surgieron APIs sobre aplicaciones y plataformas web, se fue formand
    - La URI no debe llevar un verbo que implique una acción  
       	__Incorrecto__: _/recursos/id/editar_  
        __Correcto__: _/recursos/id/_  
+
        
    - La URI deben identificar solo a un recurso, deben ser únicas.
+
    - No se debe tomar en cuenta el formato en la construcción de la URI  
       __Incorrecto__: _/recursos/archivo.pdf_   
       __Correcto__: _/recursos/archivo_
+
    - Debe mantener una jerarquía lógica.  
       __Incorrecto__: _/apartamentos/2/edificio/3_    
       __Correcto__: _/edificios/3/apartamentos/2_
+
+
    - Los filtrados de información deben hacerse mediante los parámetros HTTP  
       __Incorrecto__: _/edificios/3/apartamentos/2/orden/asc_      
       __Correcto__: _/edificios/3/apartamentos/2/?orden=asc_  
+    
       
 #### Semántica de los métodos HTTP (GET, POST, PUT, PATCH, DELETE)
 
