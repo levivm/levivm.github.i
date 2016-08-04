@@ -4,6 +4,7 @@ layout: post
 date: 2016-06-04 04:38:13
 image: 'http://nvie.com/img/merge-without-ff@2x.png'
 description: How to remove several branches at once, locally and remotly.
+tag: GIT
 tags:
 - git
 - branches
