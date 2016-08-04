@@ -79,15 +79,15 @@ __GET /series/123__ Nos permite acceder al detalle de una serie
 
 __PUT /series/123__ Nos permite editar una serie, sustituyendo la totalidad de la información anterior por la nueva.
 
-__DELETE /series/123__ Nos permite eliminar una serie
+__DELETE /series/123__ Nos permite eliminar una serie.
 
-__PATCH /serie/123__ Nos permite modificar cierta información de una serie, como el nombre
+__PATCH /serie/123__ Nos permite modificar parcialmente la información de una serie, como el nombre.
 
 Con esto hemos establecido los principios fundamentales para construir un API REST siguiendo los estándares establecidos.  
 
 En el próximo tutorial, comenzaremos a hacer nuestra primera API REST usando Django y Django Rest Framework.
 
-Ahora un gif porque nunca está de más.
+Ahora un gif porque los gif son cheveres.
 
 {: .text-center}
 When nobody notices my bug during the demo
