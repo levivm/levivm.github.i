@@ -10,19 +10,19 @@ tags:
 - REST
 - Patterns
 blog: true
-jemoji: '<img class="emoji" title=":ramen:" alt=":ramen:" src="https://assets.github.com/images/icons/emoji/unicode/1f35c.png" height="20" width="20" align="absmiddle">'
+jemoji: '<img class="emoji" title=":doughnut:" alt=":doughnut:" src="https://assets.github.com/images/icons/emoji/unicode/1f35c.png" height="20" width="20" align="absmiddle">'
 
 ---
 
-### Qué es un API REST
+## Qué es un API REST
 
 Primero, debemos saber el significado de API, por sus siglas en inglés _Application Programming Interface_. Básicamente, representan una colección de métodos y funciones implementadas en un sistema con el fin de que las mismas sean utilizadas por otros. 
 
 A medida que surgieron APIs sobre aplicaciones y plataformas web, se fue formando el término API REST, el cual se usa para denominar a las API que están implementadas bajo el protocolo HTTP. En otras palabras, un API REST  permite el uso de un servicio(function o método) perteneciente a una plataforma a un usuario externo para que el mismo lo use en una aplicación propia. 
 
-### Características
+## Características
 
-#### URI's para identificación de recursos
+### URI's para identificación de recursos
 
    Un recurso básicamente representa una sección, archivo o contenido que deseamos obtener o modificar de una plataforma web a través de su API REST. Los mismos serán identificados por una URI, la cuál nos ayudará a obtener/modificar el mismo. 
    
@@ -48,7 +48,7 @@ A medida que surgieron APIs sobre aplicaciones y plataformas web, se fue formand
       __Correcto__: _/edificios/3/apartamentos/2/?orden=asc_  
 
       
-#### Semántica de los métodos HTTP (GET, POST, PUT, PATCH, DELETE)
+### Semántica de los métodos HTTP (GET, POST, PUT, PATCH, DELETE)
 
 Una vez conocidas las principales reglas a la hora de construir nuestras URIs, pasamos al siguiente paso, darle un significado semántico o de acción a los métodos HTTP. Ampliando nuestro camino un poco más allá de los dos métodos más utilizados comúnmente: __GET__ y __POST__. 
 
@@ -60,7 +60,7 @@ Los métodos serían los siguientes:
 - __DELETE__: Para eliminar recursos.
 - __PATCH__: Para editar partes concretas de un recurso.
 
-#### Resultado final
+### Resultado final
 
 Uniendo los dos puntos anteriormente explicados, tendremos como resultado las principales reglas que debemos tomar en cuenta a la hora de diseñar las URL's para nuestra API REST.
 
