@@ -9,19 +9,19 @@ tags:
 - REST
 - Patterns
 blog: true
-jemoji: '<img class="emoji" title=":game_die:" alt=":game_die:" src="https://assets.github.com/images/icons/emoji/unicode/1f35c.png" height="20" width="20" align="absmiddle">'
+jemoji: '<img class="emoji" title=":ramen:" alt=":ramen:" src="https://assets.github.com/images/icons/emoji/unicode/1f35c.png" height="20" width="20" align="absmiddle">'
 
 ---
 
-###Qué es un API REST
+### Qué es un API REST
 
 Primero, debemos saber el significado de API, por sus siglas en inglés _Application Programming Interface_. Básicamente, representan una colección de métodos y funciones implementadas en un sistema con el fin de que las mismas sean utilizadas por otros. 
 
 A medida que surgieron APIs sobre aplicaciones y plataformas web, se fue formando el término API REST, el cual se usa para denominar a las API que están implementadas bajo el protocolo HTTP. En otras palabras, un API REST  permite el uso de un servicio(function o método) perteneciente a una plataforma a un usuario externo para que el mismo lo use en una aplicación propia. 
 
-###Características
+### Características
 
-####URI's para identificación de recursos
+#### URI's para identificación de recursos
 
    Un recurso básicamente representa una sección, archivo o contenido que deseamos obtener o modificar de una plataforma web a través de su API REST. Los mismos serán identificados por una URI, la cuál nos ayudará a obtener/modificar el mismo. 
    
