@@ -9,7 +9,7 @@ title: Blog
 		<p class="text-center">Nothing published yet!</p>
 	{% elsif site.paginate %}
 		{% for post in paginator.posts %}
-	        {% include blog-post.html %}
+	        {{ post.jemoji }} {% include blog-post.html %}
 	    {% endfor %}
 
 		{% if site.paginate %}
@@ -17,7 +17,7 @@ title: Blog
 		{% endif %}
 	{% else %}
 		{% for post in site.posts %}
-			{% include blog-post.html %}
+			{{ post.jemoji }} {% include blog-post.html %}
 		{% endfor %}
 	{% endif %}
 </section>
