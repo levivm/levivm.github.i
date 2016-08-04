@@ -9,7 +9,7 @@ tags:
 - git
 - branches
 blog: true
-jemoji:
+jemoji: ':octocat:'
 ---
 
 Sometimes, we realized that we have many branches that we don’t need anymore. It can be a tedious task delete them one by one. 
