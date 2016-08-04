@@ -4,6 +4,7 @@ layout: post
 date: 2016-08-04 04:38:13
 image: 'http://nvie.com/img/merge-without-ff@2x.png'
 description: Qué es y cómo diseñar un API REST siguiendo los principios básicos estándares
+tag: API REST
 tags:
 - API
 - REST
