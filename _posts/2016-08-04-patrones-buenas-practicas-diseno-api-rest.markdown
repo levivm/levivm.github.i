@@ -81,4 +81,8 @@ Con esto hemos establecido los principios fundamentales para construir un API RE
 
 En el próximo tutorial, comenzaremos a hacer nuestra primera API REST usando Django y Django Rest Framework.
 
-![Markdowm Image](http://i.giphy.com/vzO0Vc8b2VBLi.gif)
+Ahora un gif porque nunca está de más.
+
+{: .text-center}
+When nobody notices my bug during the demo
+![Markdowm Image](http://tclhost.com/hpktiZq.gif)
