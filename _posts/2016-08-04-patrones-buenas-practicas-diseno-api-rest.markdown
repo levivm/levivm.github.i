@@ -71,11 +71,11 @@ Uniendo los dos puntos anteriormente explicados, tendremos como resultado las pr
 
 
 
-__GET /series__ Nos permite acceder al listado de series
+__GET /series__ Nos permite acceder al listado de series.
 
-__POST /series__ Nos permite crear una nueva serie
+__POST /series__ Nos permite crear una nueva serie.
 
-__GET /series/123__ Nos permite acceder al detalle de una serie
+__GET /series/123__ Nos permite acceder al detalle de una serie.
 
 __PUT /series/123__ Nos permite editar una serie, sustituyendo la totalidad de la información anterior por la nueva.
 
