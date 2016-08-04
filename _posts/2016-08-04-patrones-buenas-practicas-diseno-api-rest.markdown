@@ -2,7 +2,7 @@
 title: "Patrones y Buenas Prácticas para diseño de un API REST"
 layout: post
 date: 2016-08-04 04:38:13
-image: 'http://nvie.com/img/merge-without-ff@2x.png'
+image: 'http://enetronx.com/wp-content/uploads/2016/04/rest-api-logo-2.jpg'
 description: Qué es y cómo diseñar un API REST siguiendo los principios básicos estándares
 tag:
 - api
@@ -80,3 +80,5 @@ __PATCH /serie/123__ Nos permite modificar cierta información de una serie, com
 Con esto hemos establecido los principios fundamentales para construir un API REST siguiendo los estándares establecidos.  
 
 En el próximo tutorial, comenzaremos a hacer nuestra primera API REST usando Django y Django Rest Framework.
+
+![Markdowm Image][http://i.giphy.com/vzO0Vc8b2VBLi.gif]
