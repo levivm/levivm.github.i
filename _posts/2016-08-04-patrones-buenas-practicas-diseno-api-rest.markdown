@@ -64,9 +64,6 @@ Los métodos serían los siguientes:
 
 ### Resultado final
 
-{: .text-center}
-![API REST POST](http://www.nodewiz.biz/content/images/2013/Nov/restful_api1.jpg)
-
 Uniendo los dos puntos anteriormente explicados, tendremos como resultado las principales reglas que debemos tomar en cuenta a la hora de diseñar las URL's para nuestra API REST.
 
 
