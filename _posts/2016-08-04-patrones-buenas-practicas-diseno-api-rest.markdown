@@ -1,9 +1,9 @@
 ---
-title: "Patrones y buenas prácticas para el diseño de un API REST"
+title: "Introducción al diseño de un API REST"
 layout: post
 date: 2016-08-04 04:38:13
-image: 'http://enetronx.com/wp-content/uploads/2016/04/rest-api-logo-2.jpg'
-description: Qué es y cómo diseñar un API REST siguiendo los principios básicos estándares
+image: 'https://openasset.com/website/_uploads/blog/rest-api.jpg'
+description: Qué es y cómo diseñar un API REST siguiendo los principios básicos establecidos
 tag:
 - api
 - rest
@@ -49,6 +49,9 @@ A medida que surgieron APIs sobre aplicaciones y plataformas web, se fue formand
       __Incorrecto__: _/edificios/3/apartamentos/2/orden/asc_      
       __Correcto__: _/edificios/3/apartamentos/2/?orden=asc_  
 
+   - Deben especificarse usando su forma plural  
+      __Incorrecto__: _/apartamento/2/_    
+      __Correcto__: _/apartamentos/2/_
       
 ### Semántica de los métodos HTTP (GET, POST, PUT, PATCH, DELETE)
 
@@ -78,9 +81,9 @@ __PUT /series/123__ Nos permite editar una serie, sustituyendo la totalidad de l
 
 __DELETE /series/123__ Nos permite eliminar una serie.
 
-__PATCH /serie/123__ Nos permite modificar parcialmente la información de una serie, como el nombre.
+__PATCH /series/123__ Nos permite modificar parcialmente la información de una serie, como el nombre.
 
-Con esto hemos establecido los principios fundamentales para construir un API REST siguiendo los estándares establecidos.  
+Con esto hemos establecido los principios fundamentales para construir un API REST siguiendo los estándares establecidos. Todavía quedan muchas consideraciones que tomar a la hora de diseñar un API REST. Las mismas las estaré tocando en otro post un poco más extenso.
 
 En el próximo tutorial, comenzaremos a hacer nuestra primera API REST usando Django y Django Rest Framework.
 
