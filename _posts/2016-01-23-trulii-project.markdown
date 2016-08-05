@@ -39,14 +39,14 @@ Backend:
 - Celery
 - Gunicorn
 - PostgreSQL
+- MongoDB
+- NodeJS
 
 Frontend:
 
 - Angular
 - Gulp
 - Less
-- Mongo DB
-- NodeJS
 
 ---
 
