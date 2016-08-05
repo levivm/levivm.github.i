@@ -71,6 +71,7 @@ gems:
   - jekyll-sitemap
   - jekyll-gist
   - jekyll-paginate
+  - jekyll-admin
   - jemoji
 
 
