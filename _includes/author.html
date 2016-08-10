@@ -1,11 +1,12 @@
 <section class="author{% if site.disqus == false %} no-disqus{% endif %}">
     <div class="toleft">
-        <img class="selfie" src="{{ site.url }}/{{ site.picture }}" alt="{{ site.name }}">
+         <img class="selfie" src="{{ site.url }}/{{ site.picture }}" alt="{{ site.name }}">
+        
     </div>
 
     <div class="toright">
         <h4 class="name">{{ site.name }}</h4>
-        <p class="bio">{{ site.bio }}</p>
+        <p class="bio">{{ site.bio }} <a href="{{ site.url }}/about">more...</a></p>
 
         <div class="share">
             <a class="twitter" href="https://twitter.com/intent/tweet?text={{ site.url }}{{ page.url }} - {{ page.title }} by @{{ site.github }}">

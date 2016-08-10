@@ -132,3 +132,5 @@ $django-admin.py startproject testproject
 We can be sure that our Django library is only available inside our new virtualenv.
 
 Please, share if you found this post useful :)
+
+Check out my others posts [here...]({{ site.url }}/blog)
