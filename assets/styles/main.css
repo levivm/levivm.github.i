@@ -354,17 +354,7 @@ figure.highlight {
   width: 100%;
   margin: 0;
 }
-code,
-tt {
-  padding: 1px 3px;
-  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
-  font-size: 12px;
-  line-height: 20px;
-  border-radius: 2px;
-  border-radius: 2px;
-  color: #fff;
-  background-color: #272822 !important;
-}
+
 pre {
   box-sizing: border-box;
   margin: 0 0 1.75em 0;
