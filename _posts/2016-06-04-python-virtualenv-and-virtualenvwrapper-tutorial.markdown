@@ -18,11 +18,21 @@ jemoji: ':octocat:'
 ## Virtualenv
 Virtualenv is a helpful tool to create isolated Python environments. So, inside those environments you can create your own projects and install it's python packages and dependencies without affecting your system’s site-packages. Also, you can control packages versions for each project and much more.
 
-We are going to need `pip`, you can installing via `easy_install`:
+We are going to need ```pip```, you can installing via ```easy_install```:
 
 
 {% highlight bash %}
 
 $sudo easy_install pip
 
-{% endhighlight %}
+{% endhighlight 
+
+We are going to use also __virtualenvwrapper__, a tool to create/delete virtualenvs in an easier way. This  because virtualenv itself is too verbose and a bit complicated. 
+
+Install virtualenvwrapper via pip:
+
+{% highlight bash %}  
+
+$ sudo pip install virtualenvwrapper
+
+{% endhighlight %}  
