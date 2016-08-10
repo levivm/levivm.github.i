@@ -107,10 +107,9 @@ For more information, read virtualenvwrapper [docs](http://virtualenvwrapper.rea
 To activate an existing virtualenv, use command `workon`:
 
 
-{% endhighlight %}
+{% highlight bash %}
 $workon myenv
 (myenv)$
-
 {% endhighlight %}
 
 ## Testing our virtualenv
