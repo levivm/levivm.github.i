@@ -14,7 +14,7 @@ jemoji: ':octocat:'
 ---
 
 # Virtual environment
-
+CodeRay.scan('{ "just": "an", "example": 42 }', :json)
 ## Virtualenv
 ---
 Virtualenv is a helpful tool to create isolated Python environments. So, inside those environments you can create your own projects and install it's python packages and dependencies without affecting your system’s site-packages. Also, you can control packages versions for each project and much more.
@@ -89,8 +89,9 @@ For more information, read virtualenvwrapper [docs](http://virtualenvwrapper.rea
 
 ## Shutting down an enviroment
   In order to deactivate your virtualenv:
-  
-  `(myenv)$ deactivate`
+  {% highlight bash %}
+  (myenv)$ deactivate
+  {% endhighlight %}
 
 ## Activating an environment
 To activate an existing virtualenv, use command `workon`:
