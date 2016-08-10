@@ -1,5 +1,5 @@
 ---
-title: "Python Virtualenv and Virtualenwrapper tutorial"
+title: "Python Virtualenv and Virtualenwrapper Tutorial"
 layout: post
 date: 2016-08-10 04:38:13
 image: 'http://nvie.com/img/merge-without-ff@2x.png'
@@ -21,38 +21,37 @@ Virtualenv is a helpful tool to create isolated Python environments. So, inside 
 We are going to need `pip` , you can installing via `easy_install`:
 
 
-{% highlight bash %}
-$sudo easy_install pip
+{% highlight raw %}
+$ sudo easy_install pip
 {% endhighlight %}  
 
 ## Installing virtualenv
----
 Install virtualenv via pip:
  
-{% highlight bash %}
-$sudo  pip install virtualenv
+{% highlight raw %}
+$ sudo  pip install virtualenv
 {% endhighlight %}  
 
  
 We are going to use also __virtualenvwrapper__, a tool to create/delete virtualenvs in an easier way. This  because virtualenv itself is too verbose and a bit complicated. 
 
 Install virtualenvwrapper via pip:
-
-{% highlight bash %}  
+{% highlight raw %}
 $ sudo pip install virtualenvwrapper
 {% endhighlight %}  
 
 Let's create where our virtual environments would live.
 
-{% highlight bash %}
-$mkdir ~/.virtualenvs
+{% highlight raw %}
+$ mkdir ~/.virtualenvs
 {% endhighlight %}  
 
 You can name it as you want, I rather prefer to use _virtualenvs_.
 
 If you are using standard shell, open your  `~/.bashrc` or `~/.zshrc` if you use oh-my-zsh. Add this two lines
 
-{% highlight bash %}
+{% highlight raw %} 
+
 export WORKON_HOME=$HOME/.virtualenvs  
 source /usr/local/bin/virtualenvwrapper.sh
 {% endhighlight %}  
@@ -60,8 +59,7 @@ source /usr/local/bin/virtualenvwrapper.sh
 ## Starting a new virtual environment
 
 Let's create a virtualenv called _myenv_
-
-{% highlight bash %}  
+{% highlight raw %} 
 $ mkvirtualenv myenv
 $ > New python executable in myenv/bin/python
 $ > Installing setuptools, pip, wheel...done.
@@ -77,7 +75,7 @@ Our new env is located at `~/.virtualenvs/myenv`
 
 By default, python virtualenv executable is took from python system version, if you want to specify your own version, add `--python=your_python_path`. If you don't know your python path, use `which` command: 
 
-{% highlight bash %}
+{% highlight raw %} 
 $ which python3
 $ > usr/local/bin/python3
 $ mkvirtualenv --python=usr/local/bin/python3 myenv
@@ -87,17 +85,17 @@ $ mkvirtualenv --python=usr/local/bin/python3 myenv
 For more information, read virtualenvwrapper [docs](http://virtualenvwrapper.readthedocs.org/en/latest/index.html)
 
 ## Shutting down an enviroment
-  In order to deactivate your virtualenv:
-  {% highlight bash %}
-  (myenv)$ deactivate
-  {% endhighlight %}
+In order to deactivate your virtualenv:
+{% highlight raw %}
+(myenv)$ deactivate
+{% endhighlight %}
 
 ## Activating an environment
 To activate an existing virtualenv, use command `workon`:
 
 
-{% highlight bash %}
-$workon myenv
+{% highlight raw %}
+$ workon myenv
 (myenv)$
 {% endhighlight %}
 
@@ -105,11 +103,10 @@ $workon myenv
 
 In order to test our virtualenv, let's install Django.
 
-{% highlight bash %}
-
+{% highlight raw %}
 (myenv)$ pip install django
 > Collecting django
->  Using cached Django-1.10-py2.py3-none-any.whl
+>   Using cached Django-1.10-py2.py3-none-any.whl
 > Installing collected packages: django
 > Successfully installed django-1.10
 
@@ -117,7 +114,7 @@ In order to test our virtualenv, let's install Django.
 
 Run a Django command, in this case, let's try to create a new project.
 
-{% highlight bash %}
+{% highlight raw %} 
 (myenv)$ django-admin.py startproject testproject
 (myenv)$ ls
 > testproject
@@ -126,11 +123,13 @@ Run a Django command, in this case, let's try to create a new project.
 
 Our command just worked as expected. Now we are going to deactivate our virtualenv and try to create a new project.
 
-{% highlight bash %}
+{% highlight raw %} 
 (myenv)$ deactivate
-$ django-admin.py startproject testproject
+$django-admin.py startproject testproject
 > command not found: django-admin.py
 
 {% endhighlight %}
 
 We can be sure that our Django library is only available inside our new virtualenv.
+
+Please, share if you found this post useful :)
