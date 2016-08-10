@@ -13,7 +13,7 @@ blog: true
 jemoji: ':octocat:'
 ---
 
-#Virtual environment
+# Virtual environment
 
 ## Virtualenv
 Virtualenv is a helpful tool to create isolated Python environments. So, inside those environments you can create your own projects and install it's python packages and dependencies without affecting your system’s site-packages. Also, you can control packages versions for each project and much more.
@@ -45,7 +45,7 @@ $ sudo pip install virtualenvwrapper
 Let's create where our virtual environments would live.
 
 {% highlight bash %}
-$ mkdir ~/.virtualenvs
+$mkdir ~/.virtualenvs
 {% endhighlight %}  
 
 You can name it as you want, I rather prefer to use _virtualenvs_.
@@ -60,7 +60,6 @@ source /usr/local/bin/virtualenvwrapper.sh
 ## Starting a new virtual environment
 
 Let's create a virtualenv called _myenv_
-
 
 {% highlight bash %}  
 $ mkvirtualenv myenv
@@ -79,11 +78,9 @@ Our new env is located at `~/.virtualenvs/myenv`
 By default, python virtualenv executable is took from python system version, if you want to specify your own version, add `--python=your_python_path`. If you don't know your python path, use `which` command: 
 
 {% highlight bash %}
-
 $ which python3
 $ > usr/local/bin/python3
 $ mkvirtualenv --python=usr/local/bin/python3 myenv
-
 {% endhighlight %}
 
 
