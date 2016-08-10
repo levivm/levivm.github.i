@@ -10,7 +10,7 @@ tag:
 - virtualenv
 - virtualenvwrapper
 blog: true
-jemoji: ':octocat:'
+jemoji: ':circus_tent:'
 ---
 
 # Virtual environment
