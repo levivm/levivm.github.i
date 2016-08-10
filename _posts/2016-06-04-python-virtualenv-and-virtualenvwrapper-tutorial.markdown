@@ -22,7 +22,9 @@ We are going to need `pip`, you can installing via `easy_install`:
 
 
 {% highlight bash %}
+
 $ sudo easy_install pip
+
 {% endhighlight %}
 
 ##Installing virtualenv
@@ -30,7 +32,9 @@ $ sudo easy_install pip
 Install virtualenv via pip:
  
 {% highlight bash %}
+
 $ sudo  pip install virtualenv
+
 {% endhighlight %}
 
  
@@ -39,12 +43,16 @@ We are going to use also __virtualenvwrapper__, a tool to create/delete virtuale
 Install virtualenvwrapper via pip:
 
 {% highlight bash %}
+
 $ sudo pip install virtualenvwrapper
+
 {% endhighlight %}
 
 Let's create where our virtual environments would live.
 {% highlight bash %}
+
 $ mkdir ~/.virtualenvs
+
 {% endhighlight %}
 
 You can name it as you want, I rather prefer to use _virtualenvs_.
@@ -52,19 +60,23 @@ You can name it as you want, I rather prefer to use _virtualenvs_.
 If you are using standard shell, open your  `~/.bashrc` or `~/.zshrc` if you use oh-my-zsh. Add this two lines
 
 {% highlight bash %}
+
 export WORKON_HOME=$HOME/.virtualenvs  
 source /usr/local/bin/virtualenvwrapper.sh
+
 {% endhighlight %}
 
 ##Starting a new virtual environment
 
 Let's create a virtualenv called _myenv_
 
+
 {% endhighlight %}
 $ mkvirtualenv myenv
 $ > New python executable in myenv/bin/python
 $ > Installing setuptools, pip, wheel...done.
 (myenv)$
+
 {% endhighlight %}
 
 You will notice a change in your command prompt, it will contain the virtualenv name that indicates that it has been activated.  Now all the python packages that your install without using `sudo` and having your env activated will install inside virtualenv own site-packages.
@@ -77,9 +89,11 @@ Our new env is located at `~/.virtualenvs/myenv`
 By default, python virtualenv executable is took from python system version, if you want to specify your own version, add `--python=your_python_path`. If you don't know your python path, use `which` command: 
 
 {% highlight bash %}
+
 $ which python3
 $ > usr/local/bin/python3
 $ mkvirtualenv --python=usr/local/bin/python3 myenv
+
 {% endhighlight %}
 
 
@@ -93,9 +107,11 @@ For more information, read virtualenvwrapper [docs](http://virtualenvwrapper.rea
 ##Activating an environment
 To activate an existing virtualenv, use command `workon`:
 
+
 {% endhighlight %}
 $workon myenv
 (myenv)$
+
 {% endhighlight %}
 
 ## Testing our virtualenv
@@ -103,26 +119,32 @@ $workon myenv
 In order to test our virtualenv, let's install Django.
 
 {% highlight bash %}
+
 (myenv)$ pip install django
 > Collecting django
 >  Using cached Django-1.10-py2.py3-none-any.whl
 > Installing collected packages: django
 > Successfully installed django-1.10
+
 {% endhighlight %}
 Run a Django command, in this case, let's try to create a new project.
 
 {% highlight bash %}
+
 (myenv)$ django-admin.py startproject testproject
 (myenv)$ ls
 > testproject
+
 {% endhighlight %}
 
 Our command just worked as expected. Now we are going to deactivate our virtualenv and try to create a new project.
 
 {% highlight bash %}
+
 (myenv)$ deactivate
 $ django-admin.py startproject testproject
 > command not found: django-admin.py
+
 {% endhighlight %}
 
 We can be sure that our Django library is only available inside our new virtualenv.
