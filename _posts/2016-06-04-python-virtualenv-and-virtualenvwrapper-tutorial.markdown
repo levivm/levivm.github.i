@@ -14,7 +14,7 @@ jemoji: ':octocat:'
 ---
 
 # Virtual environment
-CodeRay.scan('{ "just": "an", "example": 42 }', :json)
+CodeRay.scan('{ "just": "an", "example": 42 }', :json).div
 ## Virtualenv
 ---
 Virtualenv is a helpful tool to create isolated Python environments. So, inside those environments you can create your own projects and install it's python packages and dependencies without affecting your system’s site-packages. Also, you can control packages versions for each project and much more.
