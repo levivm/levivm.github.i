@@ -25,7 +25,7 @@ We are going to need ```pip```, you can installing via ```easy_install```:
 
 $sudo easy_install pip
 
-{% endhighlight 
+{% endhighlight %}  
 
 We are going to use also __virtualenvwrapper__, a tool to create/delete virtualenvs in an easier way. This  because virtualenv itself is too verbose and a bit complicated. 
 
