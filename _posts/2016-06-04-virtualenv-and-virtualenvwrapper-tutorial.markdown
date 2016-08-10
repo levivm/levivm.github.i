@@ -1,5 +1,5 @@
 ---
-title: "Virtualenv and Virtualenwrapper Tutorial"
+title: "Virtualenv and Virtualenwrapper tutorial"
 layout: post
 date: 2016-08-10 04:38:13
 image: 'http://nvie.com/img/merge-without-ff@2x.png'
