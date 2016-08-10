@@ -16,7 +16,7 @@ permalink: /:title/
 
 markdown: kramdown
 kramdown:
-  use_coderay: true
+  input: GFM
 highlighter: rouge
 
 analytics-google: 'UA-81856235-1'
