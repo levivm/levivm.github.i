@@ -4,4 +4,12 @@ title: Home
 ---
 {% include header.html %}
 
+<section class="list">
+		{% for post in site.posts%}
+			{% include blog-post.html %}
+		{% endfor %}
+</section>
+
+
+
 {% include footer.html %}
