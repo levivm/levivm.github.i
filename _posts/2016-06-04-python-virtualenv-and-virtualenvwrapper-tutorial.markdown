@@ -15,16 +15,14 @@ jemoji: ':octocat:'
 
 #Virtual environment
 
-##Virtualenv
+## Virtualenv
 Virtualenv is a helpful tool to create isolated Python environments. So, inside those environments you can create your own projects and install it's python packages and dependencies without affecting your system’s site-packages. Also, you can control packages versions for each project and much more.
 
-We are going to need `pip`, you can installing via `easy_install`:
+We are going to need ```pip```, you can installing via ```easy_install```:
 
 
 {% highlight bash %}
-
 $sudo easy_install pip
-
 {% endhighlight %}  
 
 ## Installing virtualenv
@@ -32,9 +30,7 @@ $sudo easy_install pip
 Install virtualenv via pip:
  
 {% highlight bash %}
-
 $sudo  pip install virtualenv
-
 {% endhighlight %}  
 
  
@@ -43,9 +39,7 @@ We are going to use also __virtualenvwrapper__, a tool to create/delete virtuale
 Install virtualenvwrapper via pip:
 
 {% highlight bash %}  
-
 $ sudo pip install virtualenvwrapper
-
 {% endhighlight %}  
 
 Let's create where our virtual environments would live.
@@ -59,13 +53,11 @@ You can name it as you want, I rather prefer to use _virtualenvs_.
 If you are using standard shell, open your  `~/.bashrc` or `~/.zshrc` if you use oh-my-zsh. Add this two lines
 
 {% highlight bash %}
-
 export WORKON_HOME=$HOME/.virtualenvs  
 source /usr/local/bin/virtualenvwrapper.sh
-
 {% endhighlight %}  
 
-##Starting a new virtual environment
+## Starting a new virtual environment
 
 Let's create a virtualenv called _myenv_
 
@@ -75,7 +67,6 @@ $ mkvirtualenv myenv
 $ > New python executable in myenv/bin/python
 $ > Installing setuptools, pip, wheel...done.
 (myenv)$
-
 {% endhighlight %}
 
 You will notice a change in your command prompt, it will contain the virtualenv name that indicates that it has been activated.  Now all the python packages that your install without using `sudo` and having your env activated will install inside virtualenv own site-packages.
@@ -98,12 +89,12 @@ $ mkvirtualenv --python=usr/local/bin/python3 myenv
 
 For more information, read virtualenvwrapper [docs](http://virtualenvwrapper.readthedocs.org/en/latest/index.html)
 
-##Shutting down an enviroment
+## Shutting down an enviroment
   In order to deactivate your virtualenv:
   
   `(myenv)$ deactivate`
 
-##Activating an environment
+## Activating an environment
 To activate an existing virtualenv, use command `workon`:
 
 
