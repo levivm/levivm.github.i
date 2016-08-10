@@ -1,7 +1,7 @@
 ---
 title: "Python Virtualenv and Virtualenwrapper tutorial"
 layout: post
-date: 2016-06-04 04:38:13
+date: 2016-08-10 04:38:13
 image: 'http://nvie.com/img/merge-without-ff@2x.png'
 description: How to create a python virtualenv using virtualenvwrapper
 publish: false
@@ -23,9 +23,9 @@ We are going to need `pip`, you can installing via `easy_install`:
 
 {% highlight bash %}
 
-$ sudo easy_install pip
+$sudo easy_install pip
 
-{% endhighlight %}
+{% endhighlight %}  
 
 ##Installing virtualenv
 
@@ -35,25 +35,25 @@ Install virtualenv via pip:
 
 $ sudo  pip install virtualenv
 
-{% endhighlight %}
+{% endhighlight %}  
 
  
 We are going to use also __virtualenvwrapper__, a tool to create/delete virtualenvs in an easier way. This  because virtualenv itself is too verbose and a bit complicated. 
 
 Install virtualenvwrapper via pip:
 
-{% highlight bash %}
+{% highlight bash %}  
 
 $ sudo pip install virtualenvwrapper
 
-{% endhighlight %}
+{% endhighlight %}  
 
 Let's create where our virtual environments would live.
 {% highlight bash %}
 
 $ mkdir ~/.virtualenvs
 
-{% endhighlight %}
+{% endhighlight %}  
 
 You can name it as you want, I rather prefer to use _virtualenvs_.
 
@@ -64,7 +64,7 @@ If you are using standard shell, open your  `~/.bashrc` or `~/.zshrc` if you use
 export WORKON_HOME=$HOME/.virtualenvs  
 source /usr/local/bin/virtualenvwrapper.sh
 
-{% endhighlight %}
+{% endhighlight %}  
 
 ##Starting a new virtual environment
 
