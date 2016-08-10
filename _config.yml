@@ -17,8 +17,6 @@ permalink: /:title/
 markdown: kramdown
 kramdown:
   input: GFM
-  hard_wrap: false
-  syntax_highlighter: rouge
 highlighter: rouge
 
 analytics-google: 'UA-81856235-1'
