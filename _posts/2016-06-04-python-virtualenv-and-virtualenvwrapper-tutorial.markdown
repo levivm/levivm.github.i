@@ -1,5 +1,5 @@
 ---
-title: "Python Virtualenv and Virtualenwrapper Tutorial"
+title: "Virtualenv and Virtualenwrapper Tutorial"
 layout: post
 date: 2016-08-10 04:38:13
 image: 'http://nvie.com/img/merge-without-ff@2x.png'
@@ -10,7 +10,7 @@ tag:
 - virtualenv
 - virtualenvwrapper
 blog: true
-jemoji: ':circus_tent:'
+jemoji: ':briefcase:'
 ---
 
 # Virtual environment
