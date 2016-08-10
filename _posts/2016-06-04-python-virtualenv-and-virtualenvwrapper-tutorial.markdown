@@ -16,6 +16,7 @@ jemoji: ':octocat:'
 # Virtual environment
 
 ## Virtualenv
+---
 Virtualenv is a helpful tool to create isolated Python environments. So, inside those environments you can create your own projects and install it's python packages and dependencies without affecting your system’s site-packages. Also, you can control packages versions for each project and much more.
 
 We are going to need ```pip```, you can installing via ```easy_install```:
@@ -26,7 +27,7 @@ $sudo easy_install pip
 {% endhighlight %}  
 
 ## Installing virtualenv
-
+---
 Install virtualenv via pip:
  
 {% highlight bash %}
@@ -113,10 +114,10 @@ In order to test our virtualenv, let's install Django.
 > Successfully installed django-1.10
 
 {% endhighlight %}
+
 Run a Django command, in this case, let's try to create a new project.
 
 {% highlight bash %}
-
 (myenv)$ django-admin.py startproject testproject
 (myenv)$ ls
 > testproject
@@ -126,7 +127,6 @@ Run a Django command, in this case, let's try to create a new project.
 Our command just worked as expected. Now we are going to deactivate our virtualenv and try to create a new project.
 
 {% highlight bash %}
-
 (myenv)$ deactivate
 $ django-admin.py startproject testproject
 > command not found: django-admin.py
