@@ -24,7 +24,7 @@ We are going to need `pip` , you can installing via `easy_install`:
 $ sudo easy_install pip
 {% endhighlight %}  
 
-## Installing virtualenv
+## Installing virtualenv and virtualenvwrapper
 Install virtualenv via pip:
  
 {% highlight raw %}
