@@ -3,7 +3,7 @@ title: "Virtualenv and Virtualenwrapper tutorial"
 layout: post
 date: 2016-08-10 04:38:13
 image: 'http://aeguana.com/blog/wp-content/uploads/2015/06/python-virtualenv.jpg'
-description: How to create a python virtualenv using virtualenvwrapper
+description: How to create a isolated Python enviroment using virtualenv and virtualenvwrapper
 tag:
 - python
 - virtualenv
