@@ -93,4 +93,4 @@ Ahora un gif porque los gif son cheveres.
 When nobody notices my bug during the demo
 ![Markdowm Image](http://tclhost.com/hpktiZq.gif)
 
-Si les pareció útil el post, por favor compartanlo :simple_smile:
+Si les pareció útil el post, ayudanos a compartirlo.
