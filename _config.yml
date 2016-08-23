@@ -17,6 +17,7 @@ permalink: /:title/
 markdown: kramdown
 kramdown:
   input: GFM
+  # https://github.com/jekyll/jekyll/pull/4090
 highlighter: rouge
 
 analytics-google: 'UA-81856235-1'

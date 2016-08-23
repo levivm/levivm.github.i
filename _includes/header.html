@@ -1,8 +1,13 @@
 {% if page.title == "Home"
-   or page.title == "Blog"
-   or page.title == "Projects"
-   or page.title == "Tags"
 %}{% assign showHeader = true %}{% endif %}
+
+
+
+<!-- added: new minimal header-->
+{% if page.title == "Blog" 
+   or page.title == "Projects" 
+   or page.title == "Consulting" 
+%}{% assign showMinHeader = true %}{% endif %}
 
 {% if showHeader == true %}
     <header class="header-home {% if site.animation %}animated{% endif %}">
@@ -16,5 +21,14 @@
         {% include social-links.html %}
     </header>
 {% endif %}
+
+<!-- added: new minimal header-->
+{% if showMinHeader == true %}
+    <header class="header-home {% if site.animation %}animated{% endif %}">
+        <h1 class="title">{{ page.title }}</h1>
+        {% include social-links.html %}
+    </header>
+{% endif %}
+
 
 {% include nav.html %}
