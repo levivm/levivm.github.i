@@ -509,4 +509,4 @@ When the boss finally decides to drop the IE compatibility
 
 Si les pareció útil el post, comparte :)
 
-P.D: Si no has usado [Vistas Basadas en Clases](https://docs.djangoproject.com/en/1.10/topics/class-based-views/), _you should_. Si las has usado, entonces [acá](https://ccbv.co.uk/) podrás encontrar cada vista generica con su descripción de atributos y métodos para tratar de DRY.
+P.D: Si no han usado [Vistas Basadas en Clases](https://docs.djangoproject.com/en/1.10/topics/class-based-views/), _you should_. Si las han usado, entonces [acá](https://ccbv.co.uk/) podrán encontrar cada vista generica con su descripción de atributos y métodos para tratar de DRY.
