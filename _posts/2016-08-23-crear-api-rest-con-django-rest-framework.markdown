@@ -3,7 +3,7 @@ title: "Creación de un API REST con Django Rest Framework - Parte I"
 layout: post
 date: 2016-08-23 04:38:13
 image: 'https://www.dabapps.com/static/img/technologies/rest.png'
-description: Qué es y cómo diseñar un API REST siguiendo los principios básicos establecidos.
+description: Creación de un API REST usando Django Rest Framework (DRF).
 tag:
 - api
 - rest
