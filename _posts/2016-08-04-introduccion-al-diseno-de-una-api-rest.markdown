@@ -85,7 +85,7 @@ __PATCH /series/123__ Nos permite modificar parcialmente la información de una 
 
 Con esto hemos establecido los principios fundamentales para construir un API REST siguiendo los estándares establecidos. Todavía quedan muchas consideraciones que tomar a la hora de diseñar un API REST. Las mismas las estaré tocando en otro post un poco más extenso.
 
-En el próximo tutorial, comenzaremos a hacer nuestra primera API REST usando Django y Django Rest Framework.
+En el próximo [tutorial](http://levipy.com/crear-api-rest-con-django-rest-framework/), comenzaremos a hacer nuestra primera API REST usando Django y Django Rest Framework.
 
 Ahora un gif porque los gif son cheveres.
 
