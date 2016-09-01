@@ -10,6 +10,7 @@ tag:
 - virtualenvwrapper
 blog: true
 jemoji: ':briefcase:'
+author: "Levi Velázquez"
 ---
 
 # Virtual environment
