@@ -9,13 +9,13 @@ layout: null
     <link>{{ site.url }}</link>
     {% for post in site.tags.python %}
       {% unless post.draft %}
-        <entry>
+        <item>
           <title>{{ post.title | xml_escape }}</title>
           <description>{{ post.content | xml_escape }}</description>
-          <published>{{ post.date | date_to_xmlschema }}</published>
+          <pubDate>{{ post.date | date_to_xmlschema }}</pubDate>
           <link>{{ post.url | prepend: site.url }}</link>
           <guid>{{ post.url | prepend: site.url }}</guid>
-        </entry>
+        </item>
       {% endunless %}
     {% endfor %}
   </channel>
