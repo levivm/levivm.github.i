@@ -4,8 +4,8 @@ layout: null
 
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Bakery Store - Articles</title>
-    <description>Your latest baking news</description>
+    <title>Python - Articles</title>
+    <description>Latest python tutorials and posts</description>
     <link>{{ site.url }}</link>
     {% for post in site.tags.python %}
       {% unless post.draft %}
