@@ -64,11 +64,6 @@ samp {
 .highlight pre {
   background-color: #272822;
 }
-
-.highlighter-rouge {
-  padding: 1px 3px !important;
-}
-
 .highlight .hll {
   background-color: #272822;
 }
@@ -361,7 +356,7 @@ figure.highlight {
 }
 code,
 tt {
-  padding: 1px 0px;
+  padding: 1px 3px;
   font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
   font-size: 12px;
   line-height: 20px;
@@ -370,7 +365,6 @@ tt {
   color: #fff;
   background-color: #272822;
 }
-
 pre {
   box-sizing: border-box;
   margin: 0 0 1.75em 0;
@@ -382,7 +376,6 @@ pre {
   overflow: auto;
   border: 1px solid #ededed;
   border-radius: 2px;
-  background-color: #272822;
 }
 .wrapper-normal,
 .wrapper-large {
