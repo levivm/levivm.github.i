@@ -1,0 +1,22 @@
+---
+layout: null
+---
+
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Bakery Store - Articles</title>
+    <description>Your latest baking news</description>
+    <link>{{ site.url }}</link>
+    {% for post in site.tags.python %}
+      {% unless post.draft %}
+        <item>
+          <title>{{ post.title | xml_escape }}</title>
+          <description>{{ post.content | xml_escape }}</description>
+          <pubdate>{{ post.date | date_to_xmlschema }}</pubdate>
+          <link>{{ post.url | prepend: site.url }}</link>
+          <guid ispermalink="true">{{ post.url | prepend: site.url }}</guid>
+        </item>
+      {% endunless %}
+    {% endfor %}
+  </channel>
+</rss>
