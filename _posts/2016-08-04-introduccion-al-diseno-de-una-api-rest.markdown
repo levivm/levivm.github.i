@@ -10,7 +10,7 @@ tag:
 - Patterns
 blog: true
 jemoji: ':doughnut:'
-
+author: "Levi Velázquez"
 ---
 
 ## Qué es un API REST
