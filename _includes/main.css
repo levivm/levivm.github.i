@@ -376,6 +376,7 @@ pre {
   overflow: auto;
   border: 1px solid #ededed;
   border-radius: 2px;
+  background-color: #272822;
 }
 .wrapper-normal,
 .wrapper-large {

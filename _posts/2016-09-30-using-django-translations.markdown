@@ -1,7 +1,7 @@
 ---
 title: "How to use Django Translations"
 layout: post
-date: 2016-08-23 04:38:13
+date: 2016-09-30 04:38:13
 image: 'https://c2.staticflickr.com/4/3595/3475465970_7044242629.jpg'
 description: Tutorial de como crear un API REST usando Django Rest Framework (DRF).
 tag:
@@ -15,7 +15,7 @@ author: "Levi Velázquez"
 ---
 
 
-#Django translations
+# Django translations
 
 Before start, we would need a project, lets clone my super app "cat quotes"
 
@@ -59,7 +59,7 @@ Our goal is to have a spanish and english version of our site.
 There two main steps when you need to translate a django app. The first one is  marking the strings that should be translated and second one is to generate language files where you would define the translated strings for those marked ones. 
 
 
-####Marking strings.
+#### Marking strings.
 
 
 Django provides two function for defining translations strings. They are `ugettext()` and `ugettext_lazy()`. 
@@ -125,7 +125,7 @@ class CatQuotesView(TemplateView):
         return context
 ```
 
-####Translating marked strings or translation strings.
+#### Translating marked strings or translation strings.
 
 
 Before starting to allow string translation, we need to create a folder named `locale` within our `quotes` app. In the same way, if you have more apps, you just need to create it for each one that you want to translated. In the `locale` dir is where are going to live all our translation files.  
@@ -204,7 +204,7 @@ It would create or update our `.mo` file from a `.po` extension file.
 
 
 
-##Django settings 
+## Django settings 
 
 We need to indicate to our Django app that we want to use an extra language. By default Django set `LANGUAGE` config var with this value:
 
