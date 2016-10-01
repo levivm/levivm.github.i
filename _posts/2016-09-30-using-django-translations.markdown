@@ -256,8 +256,8 @@ class CatQuotesView(TemplateView):
 
 Let's visit our cat quotes. 
 
-![Screen Shot 2016-09-06 at 12.12.51 AM.png](http://2.1m.yt/gvA1tI.png)
-![Screen Shot 2016-09-06 at 12.12.51 AM.png](http://2.1m.yt/TI4KK5a.png)
+![Screen Shot 2016-09-06 at 12.12.51 AM.png](http://1.1m.yt/45_xgcx.png)
+![Screen Shot 2016-09-06 at 12.12.51 AM.png](http://1.1m.yt/dLOwwzR.png)
 
 So, we got our quotes translated into spanish.
 
