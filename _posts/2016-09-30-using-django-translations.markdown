@@ -18,7 +18,7 @@ author: "Levi Velázquez"
 
 # Django translations
 
-Many time we face the problem to build our apps in away that itself be avaiable in several languages. That is what we call, __Internationalization__. Let's see how we can archive this. 
+Many time we face the problem to build our apps in away that theirself be avaiable in several languages. That is what we call, __Internationalization__. Let's see how we can archive this. 
 
 Before start, we would need a project, lets clone my super app "cat quotes". Django version that I'm using is 1.10.
 
