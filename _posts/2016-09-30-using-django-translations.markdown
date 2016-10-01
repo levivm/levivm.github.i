@@ -2,7 +2,7 @@
 title: "Django App Internationalization"
 layout: post
 date: 2016-09-30 04:38:13
-image: 'https://c2.staticflickr.com/4/3595/3475465970_7044242629.jpg'
+image: 'http://practicalcoding.in/check/images/fulls/b3.png'
 description: Learn how you can set up your Django app in order to be available in several languages.
 tag:
 - Django
@@ -16,9 +16,13 @@ author: "Levi Velázquez"
 ---
 
 
-# Django translations
+# Internationalization
 
-Many time we face the problem to build our apps in away that theirself be avaiable in several languages. That is what we call, __Internationalization__. Let's see how we can archive this. 
+Many time we face the problem to build our apps in away that theirself be avaiable in several languages. That is what we call, __Internationalization__. 
+
+Let's see how we can archive this. 
+
+# Django Translations
 
 Before start, we would need a project, lets clone my super app "cat quotes". Django version that I'm using is 1.10.
 
