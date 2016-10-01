@@ -1,13 +1,14 @@
 ---
-title: "How to use Django Translations"
+title: "Django App Internationalization"
 layout: post
 date: 2016-09-30 04:38:13
 image: 'https://c2.staticflickr.com/4/3595/3475465970_7044242629.jpg'
-description: Tutorial de como crear un API REST usando Django Rest Framework (DRF).
+description: Learn how you can set up your Django app in order to be available in several languages.
 tag:
 - Django
 - Python
 - Translation
+- Internationalization
 - i18n
 blog: true
 author: "Levi Velázquez"
@@ -17,7 +18,9 @@ author: "Levi Velázquez"
 
 # Django translations
 
-Before start, we would need a project, lets clone my super app "cat quotes"
+Many time we face the problem to build our apps in away that itself be avaiable in several languages. That is what we call, __Internationalization__. Let's see how we can archive this. 
+
+Before start, we would need a project, lets clone my super app "cat quotes". Django version that I'm using is 1.10.
 
 ```bash
 git clone git@github.com:levivm/cat-quotes.git cat-quotes
@@ -54,13 +57,10 @@ Run your server and visit `/cat/quotes/`. You should view something like this
 
 ![Screen Shot 2016-09-06 at 12.12.51 AM.png](https://s22.postimg.org/6bxmopfnl/Screen_Shot_2016_09_06_at_12_17_00_AM.png)
 
-Our goal is to have a spanish and english version of our site.
-
 There two main steps when you need to translate a django app. The first one is  marking the strings that should be translated and second one is to generate language files where you would define the translated strings for those marked ones. 
 
 
 ### Marking strings.
-
 
 Django provides two function for defining translations strings. They are `ugettext()` and `ugettext_lazy()`. 
 
@@ -376,3 +376,5 @@ Now, our spanish version `/es-es/cats/quotes/`
 __Note:__ Language pre ix in our url must match exactly from our defined language codes in the `settings.py` file.
 
 That is, we got our cat quote app translated in two languages. 
+
+If you found this post useful, share and spread the word. 
