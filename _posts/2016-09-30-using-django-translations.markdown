@@ -59,7 +59,7 @@ Our goal is to have a spanish and english version of our site.
 There two main steps when you need to translate a django app. The first one is  marking the strings that should be translated and second one is to generate language files where you would define the translated strings for those marked ones. 
 
 
-#### Marking strings.
+### Marking strings.
 
 
 Django provides two function for defining translations strings. They are `ugettext()` and `ugettext_lazy()`. 
@@ -125,7 +125,7 @@ class CatQuotesView(TemplateView):
         return context
 ```
 
-#### Translating marked strings or translation strings.
+### Translating marked strings or translation strings.
 
 
 Before starting to allow string translation, we need to create a folder named `locale` within our `quotes` app. In the same way, if you have more apps, you just need to create it for each one that you want to translated. In the `locale` dir is where are going to live all our translation files.  
@@ -256,8 +256,8 @@ class CatQuotesView(TemplateView):
 
 Let's visit our cat quotes. 
 
-![Screen Shot 2016-09-06 at 12.12.51 AM.png](https://i.imgsafe.org/cb7095333a.png)
-![Screen Shot 2016-09-06 at 12.12.51 AM.png](https://i.imgsafe.org/cb70c4e472.png)
+![Screen Shot 2016-09-06 at 12.12.51 AM.png](http://2.1m.yt/gvA1tI.png)
+![Screen Shot 2016-09-06 at 12.12.51 AM.png](http://2.1m.yt/TI4KK5a.png)
 
 So, we got our quotes translated into spanish.
 
