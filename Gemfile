@@ -1,8 +1,11 @@
-source "https://rubygems.org"
+source "http://rubygems.org"
 
+
+gem 'ffi', '1.9.8'
 gem "autoprefixer-rails"
 gem "html-proofer"
 gem "image_optim"
+gem 'rouge'
 gem "jekyll"
 gem "jekyll-assets"
 gem "jekyll-paginate"
