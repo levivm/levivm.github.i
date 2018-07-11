@@ -16,25 +16,29 @@ author: "Levi Velázquez"
 ---
 
 
-# Internationalization
+## Internationalization
 
 Many time we face the problem to build our apps in away that theirself be avaiable in several languages. That is what we call, __Internationalization__. 
 
 Let's see how we can archive this. 
 
-# Django Translations
+## Django Translations
 
-Before start, we would need a project, lets clone my super app "cat quotes". Django version that I'm using is 1.10.
+Before starting, let's clone our base code (cat-quotes), setup virtualenv and initialize the project.
 
-```bash
+{% highlight bash %}
+python -m venv cat-quotes-project # Creating our virtualenv
+cd cat-quotes-project
+source bin/activate
 git clone git@github.com:levivm/cat-quotes.git cat-quotes
 cd cat-quotes
+pip install -r requirements.txt
 ./manage.py migrate
-```
+{% endhighlight %}
 
 This should be our dir estructure
 
-```bash
+{% highlight bash %}
 cat
 ├── cat
 │   ├── __init__.py
@@ -55,13 +59,15 @@ cat
     ├── tests.py
     ├── urls.py
     └── views.py
-```
+{% endhighlight %}
 
-Run your server and visit `/cat/quotes/`. You should view something like this
+Run your server `./manage.py runserver 8000` and visit `http://localhost:8000/cats/quotes/`. You should view something like this
 
-![Screen Shot 2016-09-06 at 12.12.51 AM.png](https://s22.postimg.org/6bxmopfnl/Screen_Shot_2016_09_06_at_12_17_00_AM.png)
+{% include image.html path="posts/screen_1.png"
+                      path-detail="posts/screen_2.png"
+                      alt="Sample image" %}
 
-There two main steps when you need to translate a django app. The first one is  marking the strings that should be translated and second one is to generate language files where you would define the translated strings for those marked ones. 
+There two main steps in order to translate a django app. The first one is marking the strings that should be translated and second one is to generate language files where you would define the translated strings for those marked ones. 
 
 
 ### Marking strings.
@@ -74,7 +80,7 @@ We are going to use `ugettext_lazy()`. So, we need to start marking.
 Let's find our cat quotes, open `quotes/views.py`
 
 
-```python
+{% highlight python %}
 from django.views.generic import TemplateView
 
 
@@ -91,25 +97,25 @@ class CatQuotesView(TemplateView):
             'cat_quote_two': cat_quote_two
         })
         return context
-``` 
+{% endhighlight %} 
 
 Import `ugettext_lazy`
 
-```python
+{% highlight python %}
 from django.utils.translation import ugettext_lazy as _ 
-```
+{% endhighlight %}
 
 Wrap our cat quotes using `_()`. Don't worry, `_` is just an alias, you can use `ugettext_lazy()` if you want.
 
 
-```python
+{% highlight python %}
 cat_quote_one = _("I'm bilingual cat and know how to meow in several languages: Meow.")
 cat_quote_two = _("I'm not angry, go to kill yourself.")
-```
+{% endhighlight %}
 
 So, our view ends like this
 
-```python
+{% highlight python %}
 from django.views.generic import TemplateView
 from django.utils.translation import ugettext_lazy as _ 
 
@@ -127,7 +133,7 @@ class CatQuotesView(TemplateView):
             'cat_quote_two': cat_quote_two
         })
         return context
-```
+{% endhighlight %}
 
 ### Translating marked strings or translation strings.
 
@@ -139,13 +145,13 @@ Let's to create a message file for our translation strings. That file is a text-
 
 To create or update our message file, we are going to use command `makemessages` provided by Django. 
 
-Note: We need to install _GNU gettext toolset_
+Note: We need to [install _GNU gettext toolset_](https://stackoverflow.com/questions/27220052/django-i18n-make-sure-you-have-gnu-gettext-tools)
 
 To create or update a message file, we need to run the command on the root of our app containing marked strings. In our case `quotes/`.
 
-```bash
+{% highlight bash %}
 django-admin makemessages -l es_ES
-```
+{% endhighlight %}
 
 Where **es_ES** represents the local name for the message file. For example, **en-US** for United State English, **de** for German and so on.
 
@@ -153,7 +159,7 @@ It would recollect all our marked strings and update the `.po`  file. Then, we n
 
 After running the command, your `quotes` app  directory should looks like this:
 
-```
+{% highlight raw %}
 ├── __init__.py
 ├── admin.py
 ├── apps.py
@@ -169,11 +175,11 @@ After running the command, your `quotes` app  directory should looks like this:
 ├── tests.py
 ├── urls.py
 └── views.py
-```
+{% endhighlight %}
 
 We got a new folder named `es-ES` (Folder for Spanish translation files), within it, there are a folder LC_MESSAGES containing a `.po` file. That file should has entries like this:
 
-```
+{% highlight python %}
 #: views.py:11
 msgid "I'm bilingual cat and know how to meow in several languages: Meow."
 msgstr ""
@@ -181,13 +187,13 @@ msgstr ""
 #: views.py:12
 msgid "I'm not angry, go to kill yourself."
 msgstr ""
-```
+{% endhighlight %}
 
 `msgid` is the translation string, which appears in the source. Don’t change it.
 
 `msgstr` is where you put your string translation. At beginning it would be empty, you should change it. 
 
-```
+{% highlight python %}
 #: views.py:11
 msgid "I'm bilingual cat and know how to meow in several languages: Meow."
 msgstr "Soy un gato bilingüe y sé como hacer meow en varios idiomas: Meow."
@@ -195,13 +201,13 @@ msgstr "Soy un gato bilingüe y sé como hacer meow en varios idiomas: Meow."
 #: views.py:12
 msgid "I'm not angry, go to kill yourself."
 msgstr "No estoy molesto, mátate."
-```
+{% endhighlight %}
 
 
 After creating our message file, we need to transform it into a more efficient form, a **.mo** file extension. It's a optimized binary file. 
 
 To create those files we need to use the command
-` django-admin compilemessages` in our project root directory. 
+`django-admin compilemessages` in our project root directory. 
 
 It would create or update our `.mo` file from a `.po` extension file. 
 
@@ -212,20 +218,20 @@ It would create or update our `.mo` file from a `.po` extension file.
 
 We need to indicate to our Django app that we want to use an extra language. By default Django set `LANGUAGE` config var with this value:
 
-```python
+{% highlight python %}
 LANGUAGES = [
     ('en-us', 'English'),
 ]
-```
+{% endhighlight %}
 
 We are going to add Spanish to django app available languages  `('es-ES', _('Spanish'))`(note, it's `es-ES` not `es_ES`). 
 
-```python
+{% highlight python %}
 LANGUAGES = [
     ('en-us','English'),
     ('es-ES', 'Spanish')
 ]
-```
+{% endhighlight %}
 
 
 There are several ways to activate/using Django translations. Manually or by URL Prefix. 
@@ -234,11 +240,12 @@ There are several ways to activate/using Django translations. Manually or by URL
 
 Let's to activate Spanish language in our view, in order to do that, we need to import `translation` utils and activate it using `translation.activate()`. It expects a language code as parameter. You can do that wharever you want, `views.py`, `models.py` or any Django file. 
 
-```python
+{% highlight python %}
 from django.views.generic import TemplateView
 from django.utils.translation import ugettext_lazy as _
 
 from django.utils import translation
+
 
 class CatQuotesView(TemplateView):
     template_name = "quotes.html"
@@ -256,19 +263,23 @@ class CatQuotesView(TemplateView):
             'cat_quote_two': cat_quote_two
         })
         return context
-```
+{% endhighlight %}
 
-Let's visit our cat quotes. 
+Let's visit our cat quotes again `http://localhost:8000/cats/quotes/`.
 
-![Screen Shot 2016-09-06 at 12.12.51 AM.png](http://1.1m.yt/45_xgcx.png)
-![Screen Shot 2016-09-06 at 12.12.51 AM.png](http://1.1m.yt/dLOwwzR.png)
+{% include image.html path="posts/screen_2.png"
+                      path-detail="posts/screen_2.png"
+                      alt="Sample image" %}
+{% include image.html path="posts/screen_3.png"
+                      path-detail="posts/screen_3.png"
+                      alt="Sample image" %}
 
 So, we got our quotes translated into spanish.
 
 ### Using strings translations in templates
 
 {% raw  %}
-As well as we mark strings for translation in our views, we can do it in our Django template. Before do that, we need to give our template access to some type of tags in order to do that job, put `{% load i18n %}` toward the top of your template. So, after that we are going to use `{% trans %}` tag. Let's add our page title _Cat quotes for dummys._ to `quotes/templates/quotes.html` and translate it to Spanish. 
+As well as we mark strings for translation in our views, we can do it in our Django template. Before do that, we need to give our template access to some type of tags in order to do that job, put `{% load i18n %}` toward the top of your template. So, after that we are going to use `{% trans %}` tag. Let's add our page title _Cat quotes for dummys_ to `quotes/templates/quotes.html` and translate it to Spanish. 
 
 
 ```html
@@ -306,19 +317,28 @@ As well as we mark strings for translation in our views, we can do it in our Dja
 </div>  
  
 ```
+
 {% endraw  %}
+
+it should looks like this
+{% include image.html path="posts/screen_4.png"
+                      path-detail="posts/screen_4.png"
+                      alt="Sample image" %}
+
 
 Our title is already marked for translation. To update our translation file, re-run `django-admin makemessages -l es_ES` command in `quotes` app root dir and add the translation for the new entry in our `.po` file `quotes/locale/es_ES/LC_MESSAGES/django.po`
 
 
-```python
+{% highlight python %}
 #: templates/quotes.html:81
 msgid "Cat quotes for dummys."
 msgstr "Citas de gatos para principiantes."
-```
-We compile our file ` django-admin compilemessages` and that is. We should get this.
+{% endhighlight %}
+Compile again using `django-admin compilemessages` and we should get this.
 
-![Screen Shot 2016-09-06 at 12.12.51 AM.png](https://i.imgsafe.org/cbd1961e7f.png)
+{% include image.html path="posts/screen_5.png"
+                      path-detail="posts/screen_5.png"
+                      alt="Sample image" %}
 
 
 __Note:__ remember that we have activated Spanish as default language in our view.
@@ -330,9 +350,9 @@ As you can notice, it would be so tedious activate and deactivate our language m
 
 Adding the language prefix to the root of the URL patterns to make it possible for `LocaleMiddleware` to detect the language to activate from the requested URL.
 
-To do that, first, we need to add `django.middleware.locale.LocaleMiddleware` in our ` MIDDLEWARE` setting. 
+To do that, first, we need to add `django.middleware.locale.LocaleMiddleware` in our `MIDDLEWARE` setting. 
 
-```python
+{% highlight python %}
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
@@ -343,9 +363,9 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'django.middleware.locale.LocaleMiddleware'
 ]
-```
+{% endhighlight %}
 
-That middleware take care of activating a language from our url lang prefix, i.e `en-us/any_url`.
+That middleware takes care of activating a language from our url lang prefix, i.e `en-us/any_url`.
 
 Also, we should allow language codes in our urls. Using `i18n_patterns()` we can archive that. 
 
@@ -353,7 +373,7 @@ This function can be used in a root URLconf and Django will automatically prepen
 
 Our new `/cats/urls.py` should looks like this
 
-```python
+{% highlight python %}
 from django.conf.urls import url, include
 from django.contrib import admin
 from django.conf.urls.i18n import i18n_patterns
@@ -365,16 +385,43 @@ urlpatterns = [
 
 urlpatterns += i18n_patterns(
     url(r'cats/', include('quotes.urls', namespace='cat_quotes')),
-```
-Finally, we need to remove manually activation code from our views. We no longer need it.
+)
+{% endhighlight %}
+Finally, we need to remove manually language activation from our views. We no longer need it.
 
-Let's visit `/en-us/cats/quotes/`
 
-![Screen Shot 2016-09-06 at 12.12.51 AM.png](https://i.imgsafe.org/cc72247fa6.png)
+{% highlight python %}
 
-Now, our spanish version `/es-es/cats/quotes/`
+from django.views.generic import TemplateView
+from django.utils.translation import ugettext_lazy as _
 
-![Screen Shot 2016-09-06 at 12.12.51 AM.png](https://i.imgsafe.org/cc6ed1bcd5.png)
+
+class CatQuotesView(TemplateView):
+    template_name = "quotes.html"
+
+    def get_context_data(self, *args, **kwargs):
+        context = super(CatQuotesView, self).get_context_data(**kwargs)
+
+        cat_quote_one = _("I'm bilingual cat and know how to meow in several languages: Meow.")
+        cat_quote_two = _("I'm not angry, go to kill yourself.")
+        context.update({
+            'cat_quote_one': cat_quote_one,
+            'cat_quote_two': cat_quote_two
+        })
+        return context
+
+{% endhighlight %}
+Let's visit `http://localhost:8000/en-us/cats/quotes/`
+
+{% include image.html path="posts/screen_6.png"
+                      path-detail="posts/screen_6.png"
+                      alt="Sample image" %}
+
+Now, our spanish version `http://localhost:8000/es-es/cats/quotes/`
+
+{% include image.html path="posts/screen_7.png"
+                      path-detail="posts/screen_7.png"
+                      alt="Sample image" %}
 
 
 __Note:__ Language pre ix in our url must match exactly from our defined language codes in the `settings.py` file.

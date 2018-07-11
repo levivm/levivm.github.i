@@ -51,6 +51,7 @@ assets:
   sources:
     - _assets/icons
     - _assets/javascripts
+    - _assets/images
     - _assets/stylesheets
     - _assets/yarn
 collections:
@@ -81,7 +82,7 @@ plugins:
   - jekyll-sitemap
   - jemoji
 paginate_path: /posts/page/:num/
-permalink: posts/:slug
+permalink: :slug
 markdown: kramdown
 kramdown:
   input: GFM
